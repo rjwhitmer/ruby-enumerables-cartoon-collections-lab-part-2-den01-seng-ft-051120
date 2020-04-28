@@ -34,7 +34,7 @@ def find_valid_calls(planeteer_calls)
  # planeteer_calls.each do |element|
   #  valid_calls.find {element}
 #  end
-  
+  no_match = nil
   valid_calls.each do | element |
 		planeteer_calls.each do | index |
       if element == index
@@ -42,7 +42,7 @@ def find_valid_calls(planeteer_calls)
       end
     end
   end
-  
+  no_match
   
   #valid_calls.each do |element|
    # if element == planeteer_calls
