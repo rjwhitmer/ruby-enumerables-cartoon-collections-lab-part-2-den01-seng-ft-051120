@@ -35,7 +35,13 @@ def find_valid_calls(planeteer_calls)
   #  valid_calls.find {element}
 #  end
   
-  
+  valid_calls.each do | element |
+		planeteer_calls.each do | index |
+      if element == index
+        return element
+      end
+    end
+  end
   
   
   #valid_calls.each do |element|
